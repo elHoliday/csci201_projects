@@ -3,6 +3,9 @@ package edu.unca.csci201;
 public class Forest {
 
 	public static void main(String[] args) {
+		
+		
+		Tree [][] forestData = new Tree [9][];
 
 		
 		String [][] treeType = 
@@ -42,8 +45,15 @@ public class Forest {
 			  };		
 		
 		
+		for (int i=0; i < forestData.length; i++) {
+			
+			forestData[i]=new Tree [i];
 		
-		
+		for (int j = 0 ; j < forestData[i].length; j++ ) {
+			
+		}	
+			
+		}
 		
 		
 	}
