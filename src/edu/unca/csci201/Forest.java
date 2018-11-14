@@ -51,6 +51,12 @@ public class Forest {
 		
 		for (int j = 0 ; j < forestData[i].length; j++ ) {
 			
+			//forestData[i][j]=new Tree();
+			
+			//Tree = new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
+			
+			forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
+			
 		}	
 			
 		}
