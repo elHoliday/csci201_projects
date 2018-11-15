@@ -5,7 +5,7 @@ public class Forest {
 	public static void main(String[] args) {
 		
 		
-		Tree [][] forestData = new Tree [9][];
+		Tree [][] forestData = new Tree [12][];
 
 		
 		String [][] treeType = 
@@ -55,13 +55,19 @@ public class Forest {
 			
 			//Tree = new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
 			
+			//forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
 			forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
 			
+			System.out.println(" " +forestData[i][j]+ " ");
+			System.out.println();
+			
 		}	
+		
+		//System.out.println();
 			
 		}
 		
-		
+		//System.out.println();
 	}
 
 }

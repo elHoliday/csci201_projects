@@ -3,20 +3,20 @@ package edu.unca.csci201;
 public class Tree {
 	
 	private String type;
-	private int height; 
-	private int width;
+	private double height; 
+	private double width;
 	
-	public Tree(String type, int height, int width) {
+	public Tree(String type, double treeHeight, double treeWidth) {
 		
 		this.type = type;
-		this.height = height;
-		this.width = width;
+		this.height = treeHeight;
+		this.width = treeWidth;
 		
 	}
 	
 	public String toString() {
 		
-		return type + " " + height + " " + width;
+		return "This tree is a " + type + " with a height of: " + height + "ft and a width of: " + width + "ft";
 	}
 
 	public String getType() {
@@ -27,7 +27,7 @@ public class Tree {
 		this.type = type;
 	}
 
-	public int getHeight() {
+	public double getHeight() {
 		return height;
 	}
 
@@ -35,7 +35,7 @@ public class Tree {
 		this.height = height;
 	}
 
-	public int getWidth() {
+	public double getWidth() {
 		return width;
 	}
 
