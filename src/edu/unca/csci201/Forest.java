@@ -3,9 +3,6 @@ package edu.unca.csci201;
 public class Forest {
 
 	public static void main(String[] args) {
-		
-		
-		Tree [][] forestData = new Tree [12][];
 
 		
 		String [][] treeType = 
@@ -42,32 +39,28 @@ public class Forest {
 				{ .09, -1, 3.7, -1, 2.9,  },
 				{ .86, -1, .05, 1.9 },
 				{ .84, -1, .4 }			
-			  };		
+			  };
+		//set the length of the Tree object array to the length of treeType so you have room for all the trees
 		
+		Tree [][] forestData = new Tree [treeType.length][];
 		
+		//set the length of the first loop to forestData.length. A new tree is initialized for every tree type	
 		for (int i=0; i < forestData.length; i++) {
 			
-			forestData[i]=new Tree [i];
+			forestData[i]=new Tree[treeType[i].length];
+			
+		
 		
 		for (int j = 0 ; j < forestData[i].length; j++ ) {
-			
-			//forestData[i][j]=new Tree();
-			
-			//Tree = new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
-			
-			//forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
+	
 			forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
-			
+		
 			System.out.println(" " +forestData[i][j]+ " ");
 			System.out.println();
+		}		
 			
-		}	
-		
-		//System.out.println();
-			
-		}
-		
-		//System.out.println();
+		}			
+
 	}
 
 }
