@@ -48,10 +48,10 @@ public class Forest {
 		for (int i=0; i < forestData.length; i++) {
 			
 			forestData[i]=new Tree[treeType[i].length];
-			
-		
 		
 		for (int j = 0 ; j < forestData[i].length; j++ ) {
+			
+			if (treeType[i][j]!=null) {
 			
 			//treeType[i][j], treeHeight[i][j], treeWidth[i][j] function as variables
 			//of the type declared in their respective arrays
@@ -60,6 +60,7 @@ public class Forest {
 		
 			System.out.println(" " +forestData[i][j]+ " ");
 			System.out.println();
+			}
 		}		
 			
 		}			
