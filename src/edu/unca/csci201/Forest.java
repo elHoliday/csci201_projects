@@ -1,8 +1,15 @@
 package edu.unca.csci201;
 
+import java.text.DecimalFormat;
+
 public class Forest {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat fmt = new DecimalFormat("0.00");
+		double volume = 0;
+		double sum =0;
+		double average = 0;
 
 		
 		String [][] treeType = 
@@ -46,25 +53,60 @@ public class Forest {
 		
 		//set the length of the first loop to forestData.length. A new tree is initialized for every tree type	
 		for (int i=0; i < forestData.length; i++) {
+			//double volume = 0;
+			//double sum =0;
+			//double average = 0;
 			
 			forestData[i]=new Tree[treeType[i].length];
 		
 		for (int j = 0 ; j < forestData[i].length; j++ ) {
 			
-			if (treeType[i][j]!=null) {
+			//double volume = 0;
+			//double sum =0;
+			//double average = 0;
 			
+			if (treeType[i][j]!=null) {			
 			//treeType[i][j], treeHeight[i][j], treeWidth[i][j] function as variables
 			//of the type declared in their respective arrays
 	
 			forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
-		
-			System.out.println(" " +forestData[i][j]+ " ");
-			System.out.println();
-			}
-		}		
 			
-		}			
+			volume = treeHeight[i][j]*treeWidth[i][j];
+			
+					
+			System.out.println(" " +forestData[i][j]+ " ");
+			System.out.println("it has a volume of: " + fmt.format(volume));
+			System.out.println();
+			
+			
+			}
+			//System.out.println(fmt.format(volume));
+		}
+		//System.out.println(fmt.format(volume));
+		}
+		for (int a=0; a < forestData.length; a++) {
+		
+for (int b = 0 ; b < forestData[a].length; b++ ) {
+			
+			
+			volume = treeHeight[a][b]*treeWidth[a][b];
+			//average = 
+			//sum =
+					
+					
+			//System.out.println(" " +forestData[i][j]+ " ");
+			System.out.print(fmt.format(volume)+ "\t");
+			//System.out.println();
+			
+			
+			}
+		
+			
+		}
+		
+		}
+	}	
+		
 
-	}
 
-}
+
