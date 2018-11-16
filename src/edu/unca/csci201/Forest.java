@@ -52,6 +52,9 @@ public class Forest {
 		
 		
 		for (int j = 0 ; j < forestData[i].length; j++ ) {
+			
+			//treeType[i][j], treeHeight[i][j], treeWidth[i][j] function as variables
+			//of the type declared in their respective arrays
 	
 			forestData[i][j]=new Tree(treeType[i][j],treeHeight[i][j],treeWidth[i][j]);
 		
